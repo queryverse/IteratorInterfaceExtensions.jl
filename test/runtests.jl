@@ -13,4 +13,6 @@ end
 
 @test [1,2,3] == getiterator([1,2,3])
 
+@test iteratorsize2([1,2,3]) == Base.HasShape()
+
 end
