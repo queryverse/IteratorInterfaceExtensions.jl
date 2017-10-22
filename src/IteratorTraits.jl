@@ -1,3 +1,4 @@
+__precompile__(true)
 module IteratorTraits
 
 export getiterator, isiterable
