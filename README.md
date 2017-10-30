@@ -21,7 +21,7 @@ indicating whether ``x`` can be iterated. It is important to note that
 a ``true`` return value does *not* indicate that one can call the
 ``start`` method on ``x``, instead a consumer *must* call ``getiterator(x)``
 if ``isiterable(x)`` returned true, and can then call ``start`` on the
-instance that is returned by ``getiterator``. The proper pattern to
+instance that is returned by ``getiterator``. The proper pattern for
 consumer code therefore looks like this:
 ````julia
 if isiterable(x)
@@ -32,7 +32,7 @@ if isiterable(x)
 end
 ````
 This consumer pattern will work with iterators that don't opt into the
-extensions in this package here and with iterators that have opted into
+extensions in this package and with iterators that have opted into
 the extended interface defined in this package.
 
 There are two scenarios when a source might participate in this extended
@@ -46,7 +46,7 @@ of a different type with enough type information for a type stable
 implementation of the core iterator interface that iterates the elements
 of the original source.
 
-Sometimes such a source might not want to implement the ``start``, ``next``
+Second, sometimes such a source might not want to implement the ``start``, ``next``
 and ``done`` method at all for its core type. If that is the case, this
 source can add a method to ``isiterable`` that returns ``true``, even
 though the source does not have a ``start`` method. As long as this source
