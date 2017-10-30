@@ -16,7 +16,7 @@ in julia.
 ### ``isiterable`` and ``getiterator``
 
 The first extension is comprised of the functions ``isiterable`` and
-``getiterator``. ``isiterable(x)`` will return ``true`` or ``false,
+``getiterator``. ``isiterable(x)`` will return ``true`` or ``false``,
 indicating whether ``x`` can be iterated. It is important to note that
 a ``true`` return value does *not* indicate that one can call the
 ``start`` method on ``x``, instead a consumer *must* call ``getiterator(x)``
