@@ -1,7 +1,7 @@
 __precompile__(true)
 module IteratorTraits
 
-export getiterator, isiterable
+export getiterator, isiterable, iteratorsize2
 
 isiterable(x::T) where {T} = method_exists(start, Tuple{T})
 
@@ -11,5 +11,10 @@ function getiterator(x)
     end
     return x
 end
+
+struct HasLengthAfterStart <: Base.IteratorSize end
+
+iteratorsize2(x) = iteratorsize2(typeof(x))
+iteratorsize2(::Type{T}) where {T} = Base.iteratorsize(T)
 
 end # module
