@@ -1,5 +1,5 @@
 __precompile__(true)
-module IteratorTraits
+module IteratorInterfaceExtensions
 
 export getiterator, isiterable, iteratorsize2
 

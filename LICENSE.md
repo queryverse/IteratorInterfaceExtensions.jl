@@ -1,4 +1,4 @@
-The IteratorTraits.jl package is licensed under the MIT "Expat" License:
+The IteratorInterfaceExtensions.jl package is licensed under the MIT "Expat" License:
 
 > Copyright (c) 2017: David Anthoff.
 >

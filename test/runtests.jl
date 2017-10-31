@@ -1,10 +1,10 @@
-using IteratorTraits
+using IteratorInterfaceExtensions
 using Base.Test
 
 struct MyType
 end
 
-@testset "IteratorTraits" begin
+@testset "IteratorInterfaceExtensions" begin
 
 @test isiterable(MyType()) == false
 @test isiterable([1,2,3]) == true

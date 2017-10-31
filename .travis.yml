@@ -26,7 +26,7 @@ git:
 
 ## uncomment the following lines to override the default test script
 #script:
-#  - julia -e 'Pkg.clone(pwd()); Pkg.build("IteratorTraits"); Pkg.test("IteratorTraits"; coverage=true)'
+#  - julia -e 'Pkg.clone(pwd()); Pkg.build("IteratorInterfaceExtensions"); Pkg.test("IteratorInterfaceExtensions"; coverage=true)'
 after_success:
   # push coverage results to Codecov
-  - julia -e 'cd(Pkg.dir("IteratorTraits")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
+  - julia -e 'cd(Pkg.dir("IteratorInterfaceExtensions")); Pkg.add("Coverage"); using Coverage; Codecov.submit(Codecov.process_folder())'
