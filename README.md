@@ -14,7 +14,7 @@ This package adds a couple of extensions to the standard [iterator interface](ht
 
 ### ``isiterable`` and ``getiterator``
 
-The first extension is comprised of the functions ``isiterable`` and ``getiterator``. ``isiterable(x)`` will return ``true`` or ``false``, indicating whether ``x`` can be iterated. It is important to note that a ``true`` return value does *not* indicate that one can call the ``start`` method on ``x``, instead a consumer *must* call ``getiterator(x)`` if ``isiterable(x)`` returned ``true``, and can then call ``start`` on the instance that is returned by ``getiterator``. The proper pattern for consumer code therefore looks like this:
+The first extension is comprised of the functions ``isiterable`` and ``getiterator``. ``isiterable(x)`` will return ``true`` or ``false``, indicating whether ``x`` can be iterated. It is important to note that a ``true`` return value does *not* indicate that one can call the ``iterate`` method on ``x``, instead a consumer *must* call ``getiterator(x)`` if ``isiterable(x)`` returned ``true``, and can then call ``iterate`` on the instance that is returned by ``getiterator``. The proper pattern for consumer code therefore looks like this:
 
 ````julia
 if isiterable(x)
