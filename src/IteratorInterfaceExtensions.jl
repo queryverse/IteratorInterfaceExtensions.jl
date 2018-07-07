@@ -1,9 +1,9 @@
 __precompile__()
 module IteratorInterfaceExtensions
 
-export getiterator, isiterable, iteratorsize2
+export getiterator, isiterable, IteratorSize2
 
-isiterable(x::T) where {T} = method_exists(start, Tuple{T})
+isiterable(x::T) where {T} = Base.isiterable(T)
 
 function getiterator(x)
     if !isiterable(x)
@@ -14,7 +14,7 @@ end
 
 struct HasLengthAfterStart <: Base.IteratorSize end
 
-iteratorsize2(x) = iteratorsize2(typeof(x))
-iteratorsize2(::Type{T}) where {T} = Base.iteratorsize(T)
+IteratorSize2(x) = IteratorSize2(typeof(x))
+IteratorSize2(::Type{T}) where {T} = Base.IteratorSize(T)
 
 end # module

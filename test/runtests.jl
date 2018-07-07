@@ -1,5 +1,5 @@
 using IteratorInterfaceExtensions
-using Base.Test
+using Test
 
 struct MyType
 end
@@ -13,6 +13,6 @@ end
 
 @test [1,2,3] == getiterator([1,2,3])
 
-@test iteratorsize2([1,2,3]) == Base.HasShape()
+@test IteratorSize2([1,2,3]) == Base.HasShape{1}()
 
 end
