@@ -1,4 +1,3 @@
-__precompile__()
 module IteratorInterfaceExtensions
 
 export getiterator, isiterable, IteratorSize2
