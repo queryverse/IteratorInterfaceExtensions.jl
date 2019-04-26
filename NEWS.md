@@ -1,3 +1,7 @@
+# IteratorInterfaceExtensions.jl v1.0.0 Release Notes
+* Drop julia 0.7 support
+* Use Project.toml
+
 # IteratorInterfaceExtensions.jl v0.1.1 Release Notes
 * Remove precompile statement
 
