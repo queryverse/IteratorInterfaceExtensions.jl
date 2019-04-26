@@ -3,14 +3,13 @@
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/queryverse/IteratorInterfaceExtensions.jl.svg?branch=master)](https://travis-ci.org/queryverse/IteratorInterfaceExtensions.jl)
 [![Build status](https://ci.appveyor.com/api/projects/status/4rq8seb3j1wd7wpp/branch/master?svg=true)](https://ci.appveyor.com/project/queryverse/iteratorinterfaceextensions-jl/branch/master)
-[![IteratorInterfaceExtensions](http://pkg.julialang.org/badges/IteratorInterfaceExtensions_0.6.svg)](http://pkg.julialang.org/?pkg=IteratorInterfaceExtensions)
 [![codecov.io](http://codecov.io/github/queryverse/IteratorInterfaceExtensions.jl/coverage.svg?branch=master)](http://codecov.io/github/queryverse/IteratorInterfaceExtensions.jl?branch=master)
 
 IteratorInterfaceExtensions defines a small number of extensions to the iterator interface.
 
 ## Overview
 
-This package adds a couple of extensions to the standard [iterator interface] https://docs.julialang.org/en/latest/manual/interfaces/#man-interface-iteration-1) in julia.
+This package adds a couple of extensions to the standard [iterator interface](https://docs.julialang.org/en/latest/manual/interfaces/#man-interface-iteration-1) in julia.
 
 ### ``isiterable`` and ``getiterator``
 
