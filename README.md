@@ -1,8 +1,7 @@
 # IteratorInterfaceExtensions
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Build Status](https://travis-ci.org/queryverse/IteratorInterfaceExtensions.jl.svg?branch=master)](https://travis-ci.org/queryverse/IteratorInterfaceExtensions.jl)
-[![Build status](https://ci.appveyor.com/api/projects/status/4rq8seb3j1wd7wpp/branch/master?svg=true)](https://ci.appveyor.com/project/queryverse/iteratorinterfaceextensions-jl/branch/master)
+[![Build Status](https://github.com/queryverse/IteratorInterfaceExtensions.jl/actions/workflows/juliaci.yml/badge.svg?branch=main)](https://github.com/queryverse/IteratorInterfaceExtensions.jl/actions/workflows/juliaci.yml)
 [![codecov.io](http://codecov.io/github/queryverse/IteratorInterfaceExtensions.jl/coverage.svg?branch=master)](http://codecov.io/github/queryverse/IteratorInterfaceExtensions.jl?branch=master)
 
 IteratorInterfaceExtensions defines a small number of extensions to the iterator interface.
